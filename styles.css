@@ -4,17 +4,21 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    margin: 0%;
+}
+
 /*lien*/ 
 a:link {
     text-decoration: none;
     color: black;
   }
   
-  /* lien survolé */
-  a:hover {
+/* lien survolé */
+a:hover {
     text-decoration: underline;
     color: black;
-  }
+}
 
 
 /* Pour la partie header */
@@ -27,17 +31,76 @@ header nav li {
     display: inline;       
 }
 
+/*aside populaires*/
+.populaires {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    float: right;
+    margin-right: 1%;
+    width: 25%;
+}
+
+.popbox {
+    display: flex; 
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.hotelpop{
+    background-color: white;
+    border: 3px white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #dcdcdc;
+    word-wrap: break-word;
+}
+
+.hotelpop img {
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 /*Section Hébergements*/
-#hebergements {
+.hebergements {
     background-color: #F2F2F2;
+    border-radius: 10px;
+    margin-left: 1%;
+    width: 70%;
 }
 
-/*aside populaires*/
-#populaires {
-    background-color: #F2F2F2;
+.heberbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
 }
 
+.hotel{
+    background-color: white;
+    border: 3px white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #dcdcdc;
+    margin: auto;
+}
+
+.hotel img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*Activités*/ 
+.sectact {
+    clear:both;
+}
+
+.activ {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #dcdcdc;
+}
+
+.activ img {
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 /* Pour la partie footer */
 footer { 
@@ -45,9 +108,12 @@ footer {
     }
 
 footer section {
-    margin-left: 30px;
     display: inline-block;
     vertical-align: top;
     width: 400px;
     line-height: 1.8;
+}
+
+footer section li {
+    list-style-type: none;
 }
