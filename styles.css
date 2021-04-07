@@ -5,39 +5,105 @@
 }
 
 body {
-    margin: 0%;
+    margin-left: 45px;
+    margin-right: 30px;
 }
+
+p {
+    font-size: 16px;
+    font-weight:500;
+}
+
+h1 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+h3 + p {
+    font-size: 13px;
+}
+
+/*icone fontawesome*/
+.fa-stack { 
+    font-size: 10px;;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+}
+
+.fa-stack i {
+    margin: 2%;
+}
+
 
 /*lien*/ 
 a:link {
     text-decoration: none;
     color: black;
+    font-weight: 500;
   }
   
 /* lien survolé */
 a:hover {
-    text-decoration: underline;
+    text-decoration:none;
     color: black;
+    font-weight: 500;
 }
 
+a:visited {
+    text-decoration:none;
+    color: black;
+    font-weight: 500;
+}
 
 /* Pour la partie header */
+header img {
+    margin-top: 10px;
+}
+
+em {
+    font-style: normal;
+    font-weight:700; 
+    color: #0065FC;
+}
+
 header nav { 
     float: right;  
     list-style-type: none;
 }
 
-header nav li { 
-    display: inline;       
+header nav ul li { 
+    display: inline; 
+    margin-right: 50px; 
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #0065FC;
 }
 
 /*aside populaires*/
 .populaires {
     background-color: #F2F2F2;
-    border-radius: 10px;
+    border-radius: 20px;
     float: right;
-    margin-right: 1%;
-    width: 25%;
+    width: 27%;
+    padding-left:30px;
+    padding-right: 30px; 
+}
+
+.populaires h1 {
+    padding-top: 30px;
 }
 
 .popbox {
@@ -49,22 +115,30 @@ header nav li {
 .hotelpop{
     background-color: white;
     border: 3px white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px #dcdcdc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px #dcdcdc;
     word-wrap: break-word;
 }
 
 .hotelpop img {
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 /*Section Hébergements*/
 .hebergements {
     background-color: #F2F2F2;
-    border-radius: 10px;
-    margin-left: 1%;
-    width: 70%;
+    border-radius: 20px;
+    width: 62%;
+    padding-left: 25px; 
+    padding-right: 25px; 
+}
+
+.hebergements h1 {
+    padding-top: 30px;
 }
 
 .heberbox {
@@ -77,14 +151,17 @@ header nav li {
 .hotel{
     background-color: white;
     border: 3px white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #dcdcdc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px #dcdcdc;
     margin: auto;
 }
 
 .hotel img {
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 /*Activités*/ 
