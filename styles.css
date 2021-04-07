@@ -36,13 +36,14 @@ h3 + p {
 
 /*icone fontawesome*/
 .fa-stack { 
-    font-size: 10px;;
-    border-radius: 50%;
-    border: 1px solid #dcdcdc;
+    font-size: 10px;  
 }
 
 .fa-stack i {
-    margin: 2%;
+    padding: 4px 1px;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+
 }
 
 
