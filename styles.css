@@ -76,17 +76,16 @@ a:link {
     color: black;
     font-weight: 500;
   }
-  
+
+a:visited {
+    color: black; 
+    font-weight: 500;
+}  
+
 /* lien survolé */
 a:hover {
     text-decoration:none;
-    color: black;
-    font-weight: 500;
-}
-
-a:visited {
-    text-decoration:none;
-    color: black;
+    color: #0065FC;
     font-weight: 500;
 }
 
@@ -110,11 +109,6 @@ header nav {
 header nav ul li { 
     display: inline; 
     margin-right: 55px; 
-}
-
-header nav ul li a:hover {
-    text-decoration: none;
-    color: #0065FC;
 }
 
 /*Section filtres*/
@@ -310,16 +304,94 @@ header nav ul li a:hover {
 /*Activités*/ 
 .sectact {
     clear:both;
+    margin-right: 45px;
 }
 
 .activ {
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 
-.activ img {
+.activ_double {
+    width: 22%;
+}
+
+.activ_grand { 
     border-radius: 20px;
-    overflow: hidden;
+    box-shadow: 0px 0px 15px #dcdcdc;
+    overflow:hidden;
+    height: 445px;
+    width: 22%;
+}
+
+.activ_grand img {
+    height: 390px;
+    width: 100%;
+    object-position: 50% 30%;
+}
+
+.activ_grand p {
+    margin: 0; 
+}
+
+.activ_medium {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #dcdcdc;
+    overflow:hidden;
+    height: 235px;
+    margin-bottom: 40px;
+}
+
+.activ_medium img {
+    height: 180px;
+    width: 100%;
+    object-position: 50% 40%;
+}
+
+.activ_medium p {
+    margin: 0;
+}
+
+.activ_medium_small {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #dcdcdc;
+    overflow:hidden;
+    height: 195px;
+    margin-bottom: 40px;
+}
+
+.activ_medium_small img {
+    width: 100%;
+    height: 140px;
+    object-position: 50% 15%;
+}
+
+.activ_medium_large {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #dcdcdc;
+    overflow:hidden;
+    height: 210px;
+    margin-bottom: 40px;
+}
+
+.activ_medium_large img {
+    height: 155px;
+    width: 100%;
+    object-position: 50% 15%;
+}
+
+.activ_petit {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #dcdcdc;
+    overflow:hidden;
+    height: 165px;
+}
+
+.activ_petit img {
+    width: 100%;
+    height: 110px;
+    object-position: 50% 15%;
 }
 
 /* Pour la partie footer */
