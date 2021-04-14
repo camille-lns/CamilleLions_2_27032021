@@ -35,7 +35,7 @@ h2 {
 
 h3 {
     font-size: 1em;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 0.5em;
     margin-left: 15px;
     margin-top: 1em;
@@ -49,7 +49,7 @@ h3 + p {
 
 h4 {
     font-size: 1em;
-    font-weight: 800;
+    font-weight: 700;
     margin-left: 15px;
     margin-bottom: 0.3em;
     margin-top: 15px;
@@ -111,6 +111,46 @@ header nav ul li {
     margin-right: 55px; 
 }
 
+/*Rechercher*/
+.rechercher {
+    display: flex; 
+    height: 50px; 
+    margin-bottom: 30px;
+}
+
+.mapicon {
+    border-radius: 10px 0 0 10px; 
+    background-color: #dcdcdc;
+    padding: 15px 20px 0 20px; 
+}
+
+.ville {
+    border: 1px solid #dcdcdc;
+    height: 48px;
+    width: 235px;
+    margin: 0;
+    justify-content: center;
+}
+
+.ville p {
+    padding-left: 17px;
+    font-weight: 700;
+}
+
+.search {
+    background-color: #0065FC;
+    height: 50px;
+    width: 134px;
+    margin: 0;
+    border-radius: 0px 15px 15px 0;
+}
+
+.search p {
+    padding-left: 18px;
+    font-weight: 600;
+    color: white;
+}
+
 /*Section filtres*/
 .filtres {
     display: flex;
@@ -148,6 +188,12 @@ header nav ul li {
     border-left: none;
     margin-right: 25px; 
     display: flex;
+}
+
+.minifiltres a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
 }
 
 /*partie "Plus de 500 logements"*/
@@ -299,6 +345,10 @@ header nav ul li {
     width: 99%;
     overflow: hidden;
     height: 85px;
+}
+
+.stars {
+    margin-left: 15px;
 }
 
 /*Activités*/ 
