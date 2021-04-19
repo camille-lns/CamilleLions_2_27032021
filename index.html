@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
         <link href="styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/305b830273.js" crossorigin="anonymous"></script> <!--pour les icônes -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,10 +14,12 @@
         <div class="underbody">
             <!--Barre de navigation-->
             <header>
-                    <a href="#"><img src="images/logo/Reservia.svg" alt="logo du site Reservia" width="100" /></a>
+                    <a class="logo" href="#"><img src="images/logo/Reservia.svg" alt="logo du site Reservia" width="100" /></a>
                     <nav>
-                        <div class="navlien"><a href="#hebergements">Hébergements</a></div>
-                        <div class="navlien"><a href="#sectact">Activités</a></div>
+                        <div class="navlien-double">
+                            <div class="navlien"><a href="#hebergements">Hébergements</a></div>
+                            <div class="navlien"><a href="#sectact">Activités</a></div>
+                        </div>
                         <div class="navinscr"><a href="#"><em>S'inscrire</em></a></div>
                     </nav>
             </header>
@@ -300,30 +303,32 @@
         </div>
         <!--Bas de page-->
         <footer>
-            <section class="foot">
-                <h2>À propos</h2>
-                <ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>
-                </ul>
-            </section> 
+            
+                <section class="foot">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </section> 
     
-            <section class="foot">
-                <h2>Nos hébergements</h2> 
-                <ul>
-                    <li><a href="#">Charte qualité</a> </li>
-                    <li><a href="#">Soumettre votre hôtel</a> </li>
-                </ul>
-            </section>
-    
-            <section class="foot">
-                <h2>Assistance</h2>
-                <ul>
-                    <li><a href="#">Centre d'aide</a> </li>
-                    <li><a href="#">Nous contacter</a></li>
-                </ul>
-            </section>
+                <section class="foot">
+                    <h2>Nos hébergements</h2> 
+                    <ul>
+                        <li><a href="#">Charte qualité</a> </li>
+                        <li><a href="#">Soumettre votre hôtel</a> </li>
+                    </ul>
+                </section>
+        
+                <section class="foot">
+                    <h2>Assistance</h2>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a> </li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </section>
+            
         </footer>
     </body>
 
