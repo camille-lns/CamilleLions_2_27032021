@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width"/>
         <link href="styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/305b830273.js" crossorigin="anonymous"></script> <!--pour les icônes -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,9 +32,10 @@
 
             <div class="rechercher">
                 <div class="mapicon"><i class="fas fa-map-marker-alt"></i> <!--icone map--></div>
-                <div class="ville"><p>Marseille, France</p></div>
-                <div class="search"><p>Rechercher</p></div>
-                
+                <form method="post" action="traitement.php"> <!--non fonctionnel car pas de back-->
+                    <input type="text" name="ville" class="ville" value="Marseille, France"/>
+                </form>
+                <input type="button" name="search" class="search" value="Rechercher">                
             </div>
             <!--Partie filtres-->
             <section class="filtres">
