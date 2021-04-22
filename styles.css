@@ -179,16 +179,17 @@ form input {
 .search {
     background-color: var(--bluecolor);
     border:none;
+    padding: 0 18px 0 18px;
     height: 50px;
     margin: 0;
     border-radius: 0px 15px 15px 0;
-    padding: 0 18px 0 18px;
     font-weight: 600;
     color: white;
 }
 
 .search:hover {
     background-color: #002764;
+    cursor: pointer;
 }
 
 /*Section filtres*/
@@ -316,7 +317,6 @@ a.minifiltres p {
 #hebergements {
     background-color: var(--bckgrndgrey);
     border-radius: 20px;
-    width: 59%;
     padding-left: 40px; 
     height: 627px;
 }
@@ -450,7 +450,6 @@ a.minifiltres p {
 .activ_medium_small img {
     width: 100%;
     height: 140px;
-    object-position: 50% 15%;
 }
 
 .activ_medium_large {
@@ -506,16 +505,102 @@ footer section li {
     margin-bottom: 18px;
 }
 
-@media only screen and (max-width: 600px) {
+/******AJUSTEMENT PC******/
+@media only screen and (min-width: 1300px) {
+    .mini_search {
+        display: none;
+    }
+
+    #hebergements {
+        width: 59%;
+    }
+}
+
+
+/******MOBILE******/
+@media screen and (max-width: 600px) {
     .underbody {
-        padding: 0 20px 0 20px;
+        padding: 0;
     }
 
     header {
         position:static;
+        line-height: normal;
+    }
+
+    header nav {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    header img {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    .navinscr {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        padding: 0;
+    }
+
+    .navlien-double {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .navlien-double:last-child {
+        text-align: right;
+    }
+
+    .navlien {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navlien:first-child {
+        text-align: center;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--lightgrey);
+    }
+
+    .navlien:last-child {
+        text-align: center;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--lightgrey);
+    }
+
+    .premiertitre {
+        padding: 0 20px 0 20px; 
+    }
+
+    /*RECHERCHER*/
+
+    .rechercher {
+        padding: 0 20px 0 20px;
+    }
+    .search {
+        display: none;
+    }
+
+    .mini_search {
+        background-color: var(--bluecolor);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        border: none;
+        margin-left: -10px;
     }
 
     /*FILTRES*/
+    .filtres {
+        padding: 0 20px 0 20px;
+    }
+
     .fltr {
         width: 100%;
     }
@@ -524,24 +609,37 @@ footer section li {
         margin-bottom: 15px;
         margin-right: 10px;
     }
+    
+    .info {
+        padding: 0 20px 0 20px;
+    }
 
     /*POPULAIRES*/
     .populaires {
-        width: 100%;
         float: none;
         padding: 0;
+        border-radius: 0;
+    }
+
+    .populaires h1 {
+        padding: 45px 20px 25px 20px;
+    }
+
+    .popbox {
+        padding: 0 20px 0 20px;
     }
 
     .hotelpop {
         margin-bottom: 10px;
+        width: 100%;
+        padding-right: 0;
     }
-    
+
     /*HEBERGEMENTS*/
     #hebergements {
         height: 1600px;
-        width: 100%;
+        padding: 0 20px 0 20px;    
         background-color: white;
-        padding: 0;
     }
 
     .hotel {
@@ -553,6 +651,7 @@ footer section li {
     /*ACTIVITES*/
     #sectact {
         height: 1350px;
+        padding: 0 20px 0 20px;
     }
     
     .activ {
@@ -572,7 +671,8 @@ footer section li {
     /*FOOTER*/
     footer {
         flex-direction: column;
-        height: 486px;
+        height: 500px;
+        padding-bottom: 50px;
     }
 
     footer section {
