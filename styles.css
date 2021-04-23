@@ -225,7 +225,7 @@ form input {
 .minifiltres {
     height: 50px;
     border-radius:30px;
-    border: 2px solid var(--lightgrey);
+    border: 2px solid var(--bckgrndgrey);
     border-left: none;
     margin-right: 25px; 
     display: flex;
@@ -564,13 +564,18 @@ footer section li {
     .navlien:first-child {
         text-align: center;
         padding-bottom: 12px;
-        border-bottom: 2px solid var(--lightgrey);
+        border-bottom: 2px solid var(--bckgrndgrey);
     }
 
     .navlien:last-child {
         text-align: center;
         padding-bottom: 12px;
-        border-bottom: 2px solid var(--lightgrey);
+        border-bottom: 2px solid var(--bckgrndgrey);
+    }
+
+    .navlien:hover {
+        border-bottom: 2px solid var(--bluecolor);
+        border-top: none;
     }
 
     .premiertitre {
@@ -619,6 +624,7 @@ footer section li {
         float: none;
         padding: 0;
         border-radius: 0;
+        height: 585px;
     }
 
     .populaires h1 {
@@ -637,7 +643,7 @@ footer section li {
 
     /*HEBERGEMENTS*/
     #hebergements {
-        height: 1600px;
+        height: 1450px;
         padding: 0 20px 0 20px;    
         background-color: white;
     }
