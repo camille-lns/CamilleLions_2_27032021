@@ -467,6 +467,7 @@ a.minifiltres p {
 }
 
 .activ_petit {
+    display: block;
     border-radius: 20px;
     box-shadow: 0px 0px 15px var(--lightgrey);
     overflow: hidden;
@@ -484,12 +485,11 @@ footer {
     background-color: var(--bckgrndgrey);
     height: 218px;
     display: flex;
-    padding-left: 45px;
 }
     
 footer section {
     display: inline-block;
-    width: 495px;
+    flex: 1;
 }
 
 footer section h2 {
@@ -504,6 +504,12 @@ footer section li {
     list-style-type: none;
     margin-bottom: 18px;
 }
+
+.footer_underbody {
+    display: flex;
+    width: 1340px;
+}
+
 
 /******AJUSTEMENT PC******/
 @media only screen and (min-width: 1300px) {
@@ -673,6 +679,11 @@ footer section li {
     .activ div img, .activ a img {
         height: 135px;
     }
+    
+    .activ .activ_double {
+        height: 400px;
+    }
+
 
     /*FOOTER*/
     footer {
@@ -681,7 +692,13 @@ footer section li {
         padding-bottom: 50px;
     }
 
-    footer section {
+    footer .underbody {
+        margin: 0;
+    }
+
+    .footer_underbody {
+        flex-direction: column ;
+        padding: 0 20px 0 20px;
         width: 100%;
     }
 
