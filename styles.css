@@ -318,6 +318,7 @@ a.minifiltres p {
     background-color: white; 
     bottom:0px;
     width: 99%;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -503,7 +504,6 @@ a.minifiltres p {
 footer { 
     background-color: var(--bckgrndgrey);
     height: 218px;
-    display: flex;
 }
     
 footer section {
@@ -526,12 +526,12 @@ footer section li {
 
 .footer_underbody {
     display: flex;
-    width: 1340px;
+    justify-content: space-between;
 }
 
 
 /******AJUSTEMENT PC******/
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1280px) {
     .mini_search {
         display: none;
     }
@@ -541,6 +541,172 @@ footer section li {
     }
 }
 
+/******TABLETTES******/
+@media only screen and (min-width: 601px) and (max-width: 1280px) {
+    .mini_search {
+        display: none;
+    }
+
+    .underbody {
+        padding: 0;
+        max-width: 1200px;
+    }
+
+    header {
+        line-height: normal;
+        top: -80px;
+    }
+
+    header nav {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    header img {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    /*NAVBAR*/
+    .navinscr {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        padding: 0;
+    }
+
+    .navlien-double {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .navlien-double:last-child {
+        text-align: right;
+    }
+
+    .navlien {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        border-top: none;
+        background-color: white;
+    }
+
+    .navlien:first-child {
+        text-align: center;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--bckgrndgrey);
+    }
+
+    .navlien:last-child {
+        text-align: center;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--bckgrndgrey);
+    }
+
+    .navlien:hover {
+        border-bottom: 2px solid var(--bluecolor);
+        border-top: none;
+    }
+
+    .premiertitre {
+        padding: 0 20px 0 20px; 
+    }
+
+    /*barre de recherche*/
+    .rechercher {
+        padding: 0 20px 0 20px;
+    }
+
+    /*Filtres*/
+    .filtres {
+        padding: 0 20px 0 20px;
+    }
+
+    .fltr {
+        width: 100%;
+    }
+
+    .minifiltres {
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    
+    .info {
+        padding: 0 20px 0 20px;
+    }
+
+    /*POPULAIRES*/
+    .populaires {
+        float: none;
+        padding: 0;
+        border-radius: 0;
+        height: 585px;
+    }
+
+    .populaires h1 {
+        padding: 45px 20px 25px 20px;
+    }
+
+    .popbox {
+        padding: 0 20px 0 20px;
+    }
+
+    .hotelpop {
+        margin-bottom: 10px;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    /*HEBERGEMENTS*/
+    #hebergements {
+        background-color: white;
+        padding-left: 20px;
+        height: 850px;
+    }
+
+    .hotel {
+        width: 45%;
+    }
+
+    /*ACTIVITES*/
+    #sectact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .activ {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activ_grand {
+        width: 48%;
+        margin-bottom: 40px;
+    }
+
+    .activ_double {
+        width: 48%;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: var(--bckgrndgrey);
+        height: 100%;
+    }
+
+    .footer_underbody {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .foot {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
 
 /******MOBILE******/
 @media screen and (max-width: 600px) {
