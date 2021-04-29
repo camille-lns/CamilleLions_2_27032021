@@ -100,7 +100,7 @@ a:hover p, a:hover {
 
 /* Pour la partie header */
 header {
-    position:sticky; 
+    /*position:sticky; */
     top: 0; 
     background-color: white;
     z-index: 2;
@@ -297,6 +297,10 @@ a.minifiltres p {
     width: 345px;
 }
 
+.hotelpop:hover {
+    box-shadow: 1px 1px 15px #adadad;
+}
+
 .popimage {
     margin-top:5px;
     text-align: left;
@@ -373,6 +377,10 @@ a.minifiltres p {
     padding: 0 5px 0 5px;
     margin-bottom: 30px;
     margin-left: 0;
+}
+
+.hotel:hover {
+    box-shadow: 1px 1px 15px #adadad;
 }
 
 .hotelimag {
@@ -553,6 +561,7 @@ footer section li {
     }
 
     header {
+        position: sticky;
         line-height: normal;
         top: -80px;
     }
@@ -715,6 +724,7 @@ footer section li {
     }
 
     header {
+        position: sticky;
         line-height: normal;
         top: -80px;
     }
