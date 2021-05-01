@@ -55,12 +55,15 @@ h4 + p {
     margin: 7px 0 0 15px ;
 }
 
+li {
+    list-style-type: none;
+}
+
 .stars {
     margin: 0 0 0 15px;
 }
 
 /*couleurs des étoiles + images provenant de fontawesome*/
-
 .gris {
     color:var(--lightgrey);
 }
@@ -100,12 +103,18 @@ a:hover p, a:hover {
 
 /* Pour la partie header */
 header {
-    /*position:sticky; */
+    /*position:sticky; 
     top: 0; 
-    background-color: white;
     z-index: 2;
+    --> la navbar cache le titre des hébergements lorsqu'on clique sur 'Hébergements'. 
+    réglable en javascript plus tard*/
+    background-color: white;
     height: 120px;
     line-height: 120px;
+}
+
+nav ul {
+    margin: 0;
 }
 
 .navlien-double {
@@ -117,15 +126,17 @@ header {
 .navlien {
     margin: 0 5px 0 5px;
     padding: 0px 18px 0px 18px;
-    border-top: 2px solid white;
 }
 
 .navinscr {
     padding: 0px 33px 0px 33px;
+}
+
+nav li {
     border-top: 2px solid white;
 }
 
-.navlien:hover {
+nav li:hover a {
     border-top: 2px solid var(--bluecolor);
 }
 
@@ -148,7 +159,7 @@ header nav {
 }
 
 /*Trouvez votre hébergement*/
-.premiertitre h1 {
+.premiere_partie h1 {
     margin-top: 10px;
 }
 
@@ -157,6 +168,10 @@ header nav {
     display: flex; 
     height: 50px; 
     margin-bottom: 30px;
+}
+
+form {
+    display: flex;
 }
 
 .mapicon {
@@ -178,7 +193,7 @@ form input {
     font-weight: bold;
 }
 
-.search {
+.mini_search {
     background-color: var(--bluecolor);
     border:none;
     padding: 0 18px 0 18px;
@@ -189,10 +204,14 @@ form input {
     color: white;
 }
 
-.search:hover {
+.mini_search:hover {
     background-color: #002764;
     cursor: pointer;
     transition: 0.4s;
+}
+
+.mini_search i {
+    display: none;
 }
 
 /*Section filtres*/
@@ -216,7 +235,6 @@ form input {
     width: 50px;
     height: 50px;
     background-color: var(--lightblue);
-    /*AJOUTER BORDER SUR LA BOITE BLEU FONCE - ON VOIT LA BORDURE GRISE DERRIERE*/
     color: var(--bluecolor);
     border-radius: 25px;
     display: flex; 
@@ -236,6 +254,7 @@ form input {
 
 .minifiltres:hover {
     background-color: var(--bckgrndgrey);
+    transition: 0.4s;
 }
 
 a.minifiltres p {
@@ -299,6 +318,7 @@ a.minifiltres p {
 
 .hotelpop:hover {
     box-shadow: 1px 1px 15px #adadad;
+    transition: 0.4s;
 }
 
 .popimage {
@@ -350,7 +370,7 @@ a.minifiltres p {
     font-weight: 700;
 }
 
-#hebergements p {
+#hebergements p, .stars {
     font-size: 13px;
     font-weight:500;
 }
@@ -381,6 +401,7 @@ a.minifiltres p {
 
 .hotel:hover {
     box-shadow: 1px 1px 15px #adadad;
+    transition: 0.4s;
 }
 
 .hotelimag {
@@ -503,7 +524,11 @@ a.minifiltres p {
     object-position: 50% 15%;
 }
 
-.activ_petit:hover, .activ_medium:hover, .activ_medium_large:hover, .activ_medium_small:hover, .activ_grand:hover {
+.activ_petit:hover, 
+.activ_medium:hover, 
+.activ_medium_large:hover, 
+.activ_medium_small:hover, 
+.activ_grand:hover {
     background-color: var(--lightgrey);
     transition: 0.5s;
 }
@@ -528,7 +553,6 @@ footer section ul {
 }
 
 footer section li {
-    list-style-type: none;
     margin-bottom: 18px;
 }
 
@@ -540,9 +564,6 @@ footer section li {
 
 /******AJUSTEMENT PC******/
 @media only screen and (min-width: 1280px) {
-    .mini_search {
-        display: none;
-    }
 
     #hebergements {
         width: 59%;
@@ -551,9 +572,6 @@ footer section li {
 
 /******TABLETTES******/
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
-    .mini_search {
-        display: none;
-    }
 
     .underbody {
         padding: 0;
@@ -619,20 +637,11 @@ footer section li {
         border-top: none;
     }
 
-    .premiertitre {
+    .premiere_partie {
         padding: 0 20px 0 20px; 
     }
 
-    /*barre de recherche*/
-    .rechercher {
-        padding: 0 20px 0 20px;
-    }
-
     /*Filtres*/
-    .filtres {
-        padding: 0 20px 0 20px;
-    }
-
     .fltr {
         width: 100%;
     }
@@ -642,9 +651,6 @@ footer section li {
         margin-right: 10px;
     }
     
-    .info {
-        padding: 0 20px 0 20px;
-    }
 
     /*POPULAIRES*/
     .populaires {
@@ -683,6 +689,7 @@ footer section li {
     #sectact {
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 25px;
     }
 
     .activ {
@@ -714,7 +721,6 @@ footer section li {
         padding-left: 5px;
         padding-right: 5px;
     }
-
 }
 
 /******MOBILE******/
@@ -781,17 +787,31 @@ footer section li {
         border-top: none;
     }
 
-    .premiertitre {
+    .premiere_partie {
         padding: 0 20px 0 20px; 
     }
 
     /*RECHERCHER*/
 
-    .rechercher {
-        padding: 0 20px 0 20px;
-    }
     .search {
         display: none;
+    }
+
+    form {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    input {
+        flex-grow: 1;
+    }
+
+    .mini_search span {
+        display: none;
+    }
+
+    .mini_search i {
+        display: inline;
     }
 
     .mini_search {
@@ -799,15 +819,12 @@ footer section li {
         color: white;
         width: 50px;
         height: 50px;
-        border-radius: 15px;
+        border-radius: 15px 15px 15px 15px;
         border: none;
-        margin-left: -10px;
-    }
+        margin-left: -16px;
+        }
 
     /*FILTRES*/
-    .filtres {
-        padding: 0 20px 0 20px;
-    }
 
     .fltr {
         width: 100%;
@@ -816,10 +833,6 @@ footer section li {
     .minifiltres {
         margin-bottom: 15px;
         margin-right: 10px;
-    }
-    
-    .info {
-        padding: 0 20px 0 20px;
     }
 
     /*POPULAIRES*/
