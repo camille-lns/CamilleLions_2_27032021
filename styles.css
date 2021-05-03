@@ -77,6 +77,7 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    transition: all 0.4s ease-out;
   }
 
 a:visited {
@@ -85,18 +86,20 @@ a:visited {
 }  
 
 /* lien survolé */
-a:hover h3, a:hover h1, a:hover h2, a:hover h4 {
+a:hover h3, 
+a:hover h1, 
+a:hover h2, 
+a:hover h4 {
     text-decoration:none;
     color: var(--bluecolor);
     font-weight: 700;
-    transition: color 0.4s;
 }
 
-a:hover p, a:hover {
+a:hover p, 
+a:hover {
     text-decoration:none;
     color: var(--bluecolor);
     font-weight: 500;
-    transition: color 0.4s;
 }
 
 /* SITE */
@@ -136,8 +139,13 @@ nav li {
     border-top: 2px solid white;
 }
 
-nav li:hover a {
+nav li:hover {
     border-top: 2px solid var(--bluecolor);
+    cursor: pointer;
+}
+
+nav li:hover > a {
+    color: var(--bluecolor);
 }
 
 header img {
@@ -202,12 +210,12 @@ form input {
     border-radius: 0px 15px 15px 0;
     font-weight: 600;
     color: white;
+    transition: all 0.4s ease-out;
 }
 
 .mini_search:hover {
     background-color: #002764;
     cursor: pointer;
-    transition: 0.4s;
 }
 
 .mini_search i {
@@ -250,11 +258,11 @@ form input {
     border-left: none;
     margin-right: 25px; 
     display: flex;
+    transition: all 0.4s ease-out;
 }
 
 .minifiltres:hover {
     background-color: var(--bckgrndgrey);
-    transition: 0.4s;
 }
 
 a.minifiltres p {
@@ -314,11 +322,11 @@ a.minifiltres p {
     margin-bottom: 35px;
     height: 145px;
     width: 345px;
+    transition: all 0.4s ease-out;
 }
 
 .hotelpop:hover {
     box-shadow: 1px 1px 15px #adadad;
-    transition: 0.4s;
 }
 
 .popimage {
@@ -397,11 +405,11 @@ a.minifiltres p {
     padding: 0 5px 0 5px;
     margin-bottom: 30px;
     margin-left: 0;
+    transition: all 0.4s ease-out;
 }
 
 .hotel:hover {
     box-shadow: 1px 1px 15px #adadad;
-    transition: 0.4s;
 }
 
 .hotelimag {
@@ -530,7 +538,7 @@ a.minifiltres p {
 .activ_medium_small:hover, 
 .activ_grand:hover {
     background-color: var(--lightgrey);
-    transition: 0.5s;
+    transition: all 0.5s ease-out;
 }
 
 /* Pour la partie footer */
@@ -596,6 +604,22 @@ footer section li {
     }
 
     /*NAVBAR*/
+    nav li {
+        border-top: none;
+        display: flex;
+    }
+    
+    nav li:hover {
+        border-top: none;
+        
+    }
+
+    nav li:first-child, nav li:nth-child(2) {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
     .navinscr {
         position: absolute;
         top: 30px;
@@ -613,8 +637,8 @@ footer section li {
     }
 
     .navlien {
-        width: 50%;
-        margin: 0;
+        width: 100%;
+        margin: auto;
         padding: 0;
         border-top: none;
         background-color: white;
@@ -746,6 +770,21 @@ footer section li {
         padding-left: 20px;
     }
 
+    nav li {
+        border-top: none;
+        display: flex;
+    }
+    
+    nav li:hover {
+        border-top: none;
+    }
+
+    nav li:first-child, nav li:nth-child(2) {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
     .navinscr {
         position: absolute;
         top: 30px;
@@ -763,7 +802,7 @@ footer section li {
     }
 
     .navlien {
-        width: 50%;
+        width: 100%;
         margin: 0;
         padding: 0;
         border-top: none;
