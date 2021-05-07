@@ -103,14 +103,13 @@ a:hover {
 }
 
 /* SITE */
-
 /* Pour la partie header */
 header {
     /*position:sticky; 
     top: 0; 
     z-index: 2;
     --> la navbar cache le titre des hébergements lorsqu'on clique sur 'Hébergements'. 
-    réglable en javascript plus tard*/
+    réglable en javascript plus tard si besoin de rendre la navbar sticky sur la version PC*/
     background-color: white;
     height: 120px;
     line-height: 120px;
@@ -298,7 +297,7 @@ a.minifiltres p {
     border-radius: 20px;
     float: right;
     padding: 0 40px 0 40px;
-    height: 627px;
+    height: 100%;
 }
 
 .populaires h1 {
@@ -362,11 +361,13 @@ a.minifiltres p {
     background-color: var(--bckgrndgrey);
     border-radius: 20px;
     padding-left: 40px; 
-    height: 627px;
+    height: auto ;
+    padding-bottom: 25px;
 }
 
 #hebergements h1 {
     padding-top: 47px;
+    padding-bottom: 25px;
     margin: 0;
 }
 
@@ -388,7 +389,6 @@ a.minifiltres p {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
-    margin-top: 30px;
 }
 
 .hotel{ /*boite hotel*/
@@ -537,7 +537,7 @@ a.minifiltres p {
 .activ_medium_large:hover, 
 .activ_medium_small:hover, 
 .activ_grand:hover {
-    background-color: var(--lightgrey);
+    box-shadow: 1px 1px 15px #adadad;
     transition: all 0.5s ease-out;
 }
 
@@ -579,7 +579,7 @@ footer section li {
 }
 
 /******TABLETTES******/
-@media only screen and (min-width: 601px) and (max-width: 1280px) {
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
 
     .underbody {
         padding: 0;
@@ -588,6 +588,7 @@ footer section li {
 
     header {
         position: sticky;
+        z-index: 2;
         line-height: normal;
         top: -80px;
     }
@@ -681,7 +682,8 @@ footer section li {
         float: none;
         padding: 0;
         border-radius: 0;
-        height: 585px;
+        height: auto;
+        padding-bottom: 30px;
     }
 
     .populaires h1 {
@@ -702,7 +704,8 @@ footer section li {
     #hebergements {
         background-color: white;
         padding-left: 20px;
-        height: 850px;
+        height: auto;
+        padding-bottom: 0;
     }
 
     .hotel {
@@ -713,12 +716,13 @@ footer section li {
     #sectact {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 25px;
+        padding-top: 15px;
     }
 
     .activ {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
     .activ_grand {
@@ -748,13 +752,14 @@ footer section li {
 }
 
 /******MOBILE******/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .underbody {
         padding: 0;
     }
 
     header {
         position: sticky;
+        z-index: 2;
         line-height: normal;
         top: -80px;
     }
@@ -831,7 +836,6 @@ footer section li {
     }
 
     /*RECHERCHER*/
-
     .search {
         display: none;
     }
@@ -864,7 +868,6 @@ footer section li {
         }
 
     /*FILTRES*/
-
     .fltr {
         width: 100%;
     }
@@ -879,7 +882,8 @@ footer section li {
         float: none;
         padding: 0;
         border-radius: 0;
-        height: 585px;
+        height: auto;
+        padding-bottom: 25px;
     }
 
     .populaires h1 {
@@ -907,7 +911,6 @@ footer section li {
         width: 100%;
         margin-bottom: 12px;
     }
-
 
     /*ACTIVITES*/
     #sectact {
