@@ -579,7 +579,7 @@ footer section li {
 }
 
 /******TABLETTES******/
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
 
     .underbody {
         padding: 0;
@@ -612,7 +612,6 @@ footer section li {
     
     nav li:hover {
         border-top: none;
-        
     }
 
     nav li:first-child, nav li:nth-child(2) {
@@ -752,7 +751,7 @@ footer section li {
 }
 
 /******MOBILE******/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .underbody {
         padding: 0;
     }
